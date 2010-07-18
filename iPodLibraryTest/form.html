@@ -1,0 +1,15 @@
+<!-- 再生中の曲表示 サーバー側サンプルコード -->
+<html>
+<head>
+</head>
+<body>
+  Now Listening:<br>
+  <textarea id="textArea" rows=5 cols="30" ></textarea>
+  <script>
+    function setSong(song){
+      var textArea = document.getElementById('textArea');
+      textArea.value = song.title + " / " + song.artist;
+    }
+  </script>
+</body>
+</html>
